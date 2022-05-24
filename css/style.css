@@ -1,0 +1,577 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    /* font-family: 'Aref Ruqaa', serif; */
+
+    font-family: 'Tajawal', sans-serif;
+}
+body{
+    background-color: #dbe3e9;
+
+}
+
+
+
+.owl-carousel img{
+max-height: 400px;
+width:100%;
+}
+
+
+
+
+/****** scrollbar start*****/
+html::-webkit-scrollbar {
+    width: .8rem;
+
+}
+
+html::-webkit-scrollbar-track {
+    background: #262626;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rebeccapurple;
+    border-radius: 5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/****** scrollbar end*****/
+
+/*********** form-popup start *********/
+
+.form-container label b {
+    color: blue;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    transform: scale(0);
+    position: fixed;
+    border-radius: 8px;
+    top: 100px;
+    right: 30%;
+    transition: all 1s;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: yellowgreen;
+    border-radius: 8px;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 8px;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 15px;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+    opacity: 1;
+}
+
+
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+/* menu section */
+.menu-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: 21px;
+
+}
+
+.logo img {
+    width: 100%;
+    height: 50px;
+}
+
+.nav-bar a {
+    margin: 0 10px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    color: #FBFBFB;
+    border: rgba(238, 238, 238, 0.221) solid 1px;
+    transition: all 0.7s;
+}
+
+.nav-bar a:hover {
+    
+    background-color: rgba(255, 0, 0, 0.578);
+
+}
+
+.menu-bar ul {
+    position: absolute;
+    top: 77px;
+    right: 1px;
+}
+
+.menu-bar a {
+    display: block;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.contain-menu {
+    position: relative;
+    height: 500px;
+    background-image: url(/image/joob.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* icon bar => small screen  */
+.menu-bar-icon i {
+    color: #2964d1;
+    display: none;
+}
+
+
+/***** paragraph *****/
+.right-sec {
+    width: 40%;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.right-sec p {
+    color: #FBFBFB;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    word-spacing: 3px;
+    font-family: 'Aref Ruqaa', serif;
+}
+
+.join {
+    background-color: #ddd;
+    padding: 5px 20px;
+    border-radius: 8px;
+    color: #000;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-left: 100px;
+    transition: all 0.6s;
+    outline: none;
+    border: none;
+}
+
+.join:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+/* main section */
+
+/* .main-sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+} */
+
+
+/**** drop down  menu*** */
+
+/* .main-menu {
+    border: #eee solid 1px;
+    background-color: #ffffffa3;
+    border-radius: 6px;
+    width: 290px;
+    height: 40px;
+    font-size: 30px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.main-menu .fa-angle-down {
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.dropdown-menu-dewal,
+.dropdown-menu-mehan {
+    position: absolute;
+    top: 39px;
+    right: 0;
+    width: 123px;
+    background-color: #ffffffa3;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    display: none;
+}
+
+.dropdown-menu-mehan {
+    left: 8px;
+}
+
+.sub-ul li {
+    margin: 2px 0;
+
+}
+
+.sub-ul li a {
+    color: #000;
+    font-size: 22px;
+}
+
+.sub-ul li:hover {
+    background-color: #2964d1;
+    color: #fff;
+}
+
+.sub-ul li:hover a {
+    color: #fff;
+}
+
+.sub-ul-dewal li {
+    text-align: right;
+    padding: 5px 8px;
+
+}
+.sub-ul-mehan {
+    position: absolute;
+    top: 0;
+    right: 350px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+
+
+ */
+
+
+
+
+
+
+
+
+/* category-title */
+
+
+.category-title {
+    text-align: center;
+}
+
+.category-title h3 {
+    font-size: 20px;
+    color: #2964d1;
+    margin: 50px 0;
+    position: relative;
+}
+
+.category-title h3::after {
+    content: "";
+    width: 100px;
+    color: #2964d1;
+    position: absolute;
+    height: 3px;
+    top: 33px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2964d1;
+    transition: all 1s;
+}
+
+.category-title h3:hover:after {
+    width: 150px;
+}
+
+.cataigores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    
+}
+
+.cat-sec {
+    width: 30%;
+    text-align: center;
+    position: relative;
+
+}
+
+.cat-item {
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #163d57;
+    color: #FBFBFB;
+}
+
+.cat-item img {
+    width: 80%;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: all 0.8s;
+    max-height: 250px;
+}
+
+.cat-item img:hover {
+    transform: scale(1.2);
+}
+
+.cat-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #FBFBFB;
+    margin-top: 20px;
+}
+
+.cat-text {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 10px 6px;
+}
+
+.cat-btn {
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin: 15px auto;
+    font-size: 15px;
+    color: #163d57;
+    transition: all 1s;
+
+}
+
+.cat-btn:hover {
+    cursor: pointer;
+    background-color:#bf9149;
+    color: #FBFBFB;
+
+}
+
+
+/************ customers start**************/
+.customers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-item {
+    width: 30%;
+    background-color: #163d57;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+}
+
+.customer-item .fa-theater-masks {
+    color: #bf9149;
+    font-size: 33px;
+}
+
+.customer-item p {
+    font-size: 15px;
+    color: #ddd;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+
+}
+
+.customer-item img {
+    width: 100%;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.customer-item h3 {
+    color: #FBFBFB;
+    margin: 10px 0;
+}
+
+.customer-item .starRate {
+    color: #bf9149;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer section*/
+.footer {
+    position: relative;
+    margin-top: 80px;
+    height: 200px;
+    background-color: #262626;
+    width: 100%;
+    color: #FBFBFB;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-img,
+.footer-logo {
+    width: 20%;
+    text-align: center;
+}
+
+.app-img img {
+    width: 50%;
+}
+
+.footer-icon {
+    width: 30%;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-brands {
+    color: #FBFBFB;
+    background-color: #2964d1;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.fa-brands:hover {
+    background-color: #FBFBFB;
+    color: chartreuse;
+}
+
+.footer-nav {
+    direction: rtl;
+    margin-right: 44px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav a {
+    color: #FBFBFB;
+    padding: 4px 20px;
+    margin-top: 30px;
+    margin-left: 18px;
+    border: #FBFBFB solid 1px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px #FBFBFB;
+}
+
+.footer-nav a:hover {
+    color: chartreuse;
+    transform: scale(1.1);
+}
+
+
+/*** الجزء الخاص بشاشة طلب عمال*******/
+/* menu */
+.contain-menu-talap{
+    background-color: #262626;
+    width: 100%;
+    height: 100px;
+}
+/* form container */
+.form-container-talap{
+    color: blue;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    direction: rtl;
+    width: 400px;
+    height: 500px;
+    display: block;
+    margin: 40px auto;
+    background-color:chartreuse ;
+    border-radius: 8px;
+}
+
+.form-container-talap input[type=text]{
+    margin: 8px 0;
+    padding: 5px 10px ;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    font-size: 20px;
+}
+.form-container-talap input[type=number]{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: #000;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+}
