@@ -9,19 +9,11 @@
 
     font-family: 'Tajawal', sans-serif;
 }
-body{
+
+body {
     background-color: #dbe3e9;
 
 }
-
-
-
-.owl-carousel img{
-max-height: 400px;
-width:100%;
-}
-
-
 
 
 /****** scrollbar start*****/
@@ -35,7 +27,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: rebeccapurple;
+    background: rgb(79, 8, 150);
     border-radius: 5rem;
 }
 
@@ -124,11 +116,10 @@ html {
 /* menu section */
 .menu-item {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
-    font-size: 21px;
-
+    font-size: 17px;
+    height: 70px;
 }
 
 .logo img {
@@ -146,7 +137,7 @@ html {
 }
 
 .nav-bar a:hover {
-    
+
     background-color: rgba(255, 0, 0, 0.578);
 
 }
@@ -163,54 +154,45 @@ html {
     padding: 20px;
 }
 
-.contain-menu {
-    position: relative;
-    height: 500px;
-    background-image: url(/image/joob.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
+.menu-item {
+    background-color: rgba(6, 43, 70, 0.98);
 }
 
 /* icon bar => small screen  */
-.menu-bar-icon i {
-    color: #2964d1;
+.menu-bar-icon {
+    display: none;
+    color: #eee;
+    font-size: 22px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.menu-bar-icon:hover {
+    color: red;
+    cursor: pointer;
+
+}
+
+/* mobil-icon-bar */
+
+
+#mobile {
+    position: fixed;
+    width: 120px;
+    top: 70px;
+    bottom: 300px;
+    right: 0;
+    background-color: rgba(6, 43, 70, 0.98);
+    z-index: 10;
+    border-radius: 0 0 0 140px;
     display: none;
 }
 
-
-/***** paragraph *****/
-.right-sec {
-    width: 40%;
-    margin-top: 100px;
-    margin-left: 30px;
-}
-
-.right-sec p {
-    color: #FBFBFB;
-    font-size: 22px;
-    text-align: center;
-    font-weight: 600;
-    word-spacing: 3px;
-    font-family: 'Aref Ruqaa', serif;
-}
-
-.join {
-    background-color: #ddd;
-    padding: 5px 20px;
-    border-radius: 8px;
-    color: #000;
-    font-size: 20px;
-    margin-top: 80px;
-    margin-left: 100px;
-    transition: all 0.6s;
-    outline: none;
-    border: none;
-}
-
-.join:hover {
-    color: #fff;
-    cursor: pointer;
-    background-color: red;
+#mobile a {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
 }
 
 
@@ -220,91 +202,93 @@ html {
 
 
 
-/* main section */
 
-/* .main-sec {
+
+
+
+
+
+
+
+
+/* language icon => nav menu */
+
+.lang {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    cursor: pointer;
+    justify-content: flex-end;
+    width: min-content;
+
+}
+
+.lang h5 {
+    color: #eee;
+    font-size: 10px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.lang img {
+    width: 20px;
+}
+
+/* slider section */
+.owl-carousel .owl-item img {
+    max-height: 380px;
+}
+
+/* country select section start */
+
+
+/* country select section end */
+.container-form {
+    height: 180px;
+    margin: 0 auto;
+
+}
+
+/* .in-form {
+    width: 80% !important;
 
 } */
 
+.container-form .select {
 
-/**** drop down  menu*** */
-
-/* .main-menu {
-    border: #eee solid 1px;
-    background-color: #ffffffa3;
+    padding: 5px 10px;
+    background-color: rgba(6, 43, 70, 0.98);
+    border: none;
+    color: #fff;
+    outline: none;
     border-radius: 6px;
-    width: 290px;
-    height: 40px;
-    font-size: 30px;
-    padding: 8px;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-
+    font-size: 19px;
+    display: block;
+    margin: 40px auto;
 }
 
-.main-menu .fa-angle-down {
-    font-size: 20px;
-    color: #000;
+.btn-sub {
+    padding: 5px 15px;
+    margin-left: 40px;
+    border: none;
+    background-color: rgba(6, 43, 70, 0.98);
+    color: #fff;
+    outline: none;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: all 0.7s;
+    display: block;
+    margin: 10px auto;
+}
+
+.btn-sub:hover {
     cursor: pointer;
-}
-
-
-.dropdown-menu-dewal,
-.dropdown-menu-mehan {
-    position: absolute;
-    top: 39px;
-    right: 0;
-    width: 123px;
-    background-color: #ffffffa3;
-    border-radius: 0 0 5px 5px;
-    text-align: center;
-    display: none;
-}
-
-.dropdown-menu-mehan {
-    left: 8px;
-}
-
-.sub-ul li {
-    margin: 2px 0;
+    background-color: red;
 
 }
 
-.sub-ul li a {
-    color: #000;
-    font-size: 22px;
-}
-
-.sub-ul li:hover {
-    background-color: #2964d1;
-    color: #fff;
-}
-
-.sub-ul li:hover a {
-    color: #fff;
-}
-
-.sub-ul-dewal li {
-    text-align: right;
-    padding: 5px 8px;
-
-}
-.sub-ul-mehan {
-    position: absolute;
-    top: 0;
-    right: 350px;
-    width: 100px;
-    background-color: #fff;
-    border-radius: 0 0 5px 5px;
-}
 
 
 
- */
+
 
 
 
@@ -322,17 +306,23 @@ html {
 
 .category-title h3 {
     font-size: 20px;
-    color: #2964d1;
-    margin: 50px 0;
+    color: rgba(6, 43, 70, 0.98);
+    margin: 15px 0;
     position: relative;
+}
+#elmehan{
+    margin: 100px 0;
+}
+.category-title h3:hover {
+    cursor: pointer;
 }
 
 .category-title h3::after {
     content: "";
-    width: 100px;
+    width: 60px;
     color: #2964d1;
     position: absolute;
-    height: 3px;
+    height: 2px;
     top: 33px;
     left: 50%;
     right: 50%;
@@ -342,7 +332,7 @@ html {
 }
 
 .category-title h3:hover:after {
-    width: 150px;
+    width: 100px;
 }
 
 .cataigores {
@@ -350,7 +340,7 @@ html {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 30px;
-    
+
 }
 
 .cat-sec {
@@ -363,7 +353,7 @@ html {
 .cat-item {
     border-radius: 8px;
     padding: 5px;
-    background-color: #163d57;
+    background-color: rgba(6, 43, 70, 0.98);
     color: #FBFBFB;
 }
 
@@ -381,7 +371,7 @@ html {
 
 .cat-title {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     color: #FBFBFB;
     margin-top: 20px;
 }
@@ -389,7 +379,8 @@ html {
 .cat-text {
     font-size: 13px;
     font-weight: 400;
-    margin: 10px 6px;
+    margin: 10px 20px;
+    color: aquamarine;
 }
 
 .cat-btn {
@@ -404,7 +395,7 @@ html {
 
 .cat-btn:hover {
     cursor: pointer;
-    background-color:#bf9149;
+    background-color: #bf9149;
     color: #FBFBFB;
 
 }
@@ -465,11 +456,18 @@ html {
 
 
 /* footer section*/
+.comtain-footer {
+    background-image: url(/image/foteerr.jpg);
+    background-position: top;
+    background-size: cover;
+
+}
+
+
 .footer {
+    height: 250px;
     position: relative;
     margin-top: 80px;
-    height: 200px;
-    background-color: #262626;
     width: 100%;
     color: #FBFBFB;
 }
@@ -482,91 +480,231 @@ html {
 
 .app-img,
 .footer-logo {
-    width: 20%;
     text-align: center;
+}
+
+.footer-logo {
+    flex-grow: 0.5;
+
+}
+
+.app-img {
+    margin-top: 20px;
+}
+
+.app-img h3 {
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .app-img img {
     width: 50%;
 }
 
-.footer-icon {
-    width: 30%;
-    font-size: 30px;
-    display: flex;
-    justify-content: space-around;
-}
-
 .fa-brands {
     color: #FBFBFB;
-    background-color: #2964d1;
-    border-radius: 50%;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    font-size: 22px;
+    margin-right: 20px;
+    transition: all 0.7s;
+    margin-top: 20px;
 }
 
 .fa-brands:hover {
-    background-color: #FBFBFB;
-    color: chartreuse;
+    color: red;
+    transform: scale(1.2);
+
 }
 
 .footer-nav {
-    direction: rtl;
-    margin-right: 44px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 .footer-nav a {
     color: #FBFBFB;
-    padding: 4px 20px;
+    padding: 4px;
     margin-top: 30px;
-    margin-left: 18px;
-    border: #FBFBFB solid 1px;
+    border: #534a4a solid 1px;
     border-radius: 6px;
-    box-shadow: 1px 1px 1px 1px #FBFBFB;
+    transition: all 1s;
+    width: max-content;
 }
 
 .footer-nav a:hover {
-    color: chartreuse;
+    color: #fff;
     transform: scale(1.1);
+    background-color: red;
+
 }
+
+#whatsapp {
+    position: absolute;
+    right: 2px;
+    bottom: 170px;
+    color: #fff;
+    font-size: 40px;
+    background-color: goldenrod;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#whatsapp::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 2px solid #25d366;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: whatsapp 1.5s linear infinite;
+
+}
+
+@keyframes whatsapp {
+    0% {
+        transform: scale(0, 0);
+    }
+
+    25% {
+        transform: scale(0.25, 0.25);
+    }
+
+    50% {
+        transform: scale(0.5, 0.5);
+    }
+
+    75% {
+        transform: scale(0.75, 0.75);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+
+#arrow-up {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    bottom: 255px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+/***** paragraph *****/
+.right-sec {
+    width: 40%;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.right-sec p {
+    color: #FBFBFB;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    word-spacing: 3px;
+    font-family: 'Aref Ruqaa', serif;
+}
+
+.join {
+    background-color: #ddd;
+    padding: 5px 20px;
+    border-radius: 8px;
+    color: #000;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-left: 100px;
+    transition: all 0.6s;
+    outline: none;
+    border: none;
+}
+
+.join:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*** الجزء الخاص بشاشة طلب عمال*******/
 /* menu */
-.contain-menu-talap{
-    background-color: #262626;
-    width: 100%;
-    height: 100px;
+.container-talap {
+    background-image: url(/image/talapCover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
 }
+
+.overLay {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 /* form container */
-.form-container-talap{
-    color: blue;
+.form-container-talap {
+    color: #fff;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
     direction: rtl;
     width: 400px;
-    height: 500px;
+  
     display: block;
-    margin: 40px auto;
-    background-color:chartreuse ;
+    margin: 100px auto;
+    padding: 20px 0;
     border-radius: 8px;
+    background-color: #163d57;
+    box-shadow: 0 0 10px 1px #fff;
 }
 
-.form-container-talap input[type=text]{
-    margin: 8px 0;
-    padding: 5px 10px ;
+.form-container-talap label {
+    font-size: 17px;
+}
+
+.form-container-talap input[type=text],
+input[type=tel] {
+    margin: 15px 0;
+    padding: 5px 20px;
     outline: none;
     border: none;
     border-radius: 6px;
-    color: #000;
     font-size: 20px;
+    background-color: rgba(221, 218, 218, 0.1);
+    color: #fff;
 }
-.form-container-talap input[type=number]{
+
+.form-container-talap input[type=number] {
     outline: none;
     border: none;
     border-radius: 6px;
@@ -574,4 +712,527 @@ html {
     font-size: 20px;
     width: 40px;
     text-align: center;
+    color: blue;
+    background-color: gray;
+
+}
+
+.sub-talap,
+.end-tatabae {
+    background-color: rgba(137, 43, 226, 0.685);
+    padding: 4px 15px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin: 30px;
+    color: #fff;
+    transition: all 0.5s;
+}
+.end-tatabae{
+    margin-top: 0 !important;
+}
+.sub-talap:hover,
+.end-tatabae:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+/***** الجزء الخاص بصفحة تواصل معنا  *****/
+.cotact-container {
+    background-image: url(/image/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+}
+
+
+
+#mosh {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    border: none;
+    overflow: auto;
+    outline: none;
+    border-radius: 8px;
+    background-color: rgba(221, 218, 218, 0.1);
+    color: #fff;
+    font-size: 15px;
+}
+
+.text-prb {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* الجزء الخاص بصفحة تتبع طلبك */
+
+
+
+.num-of-talap {
+    background-color: #163d57;
+    padding: 15px;
+    border-radius: 10px;
+    width: 50%;
+    padding: 30px 0;
+    margin: 40px auto;
+    text-align: center;
+    height: 300px;
+}
+
+.num-of-talap input[type=number] {
+    padding: 5px 75px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+/* الجزء الخاص بصفحة الطلبات  */
+.tatabea-container {
+    background-image: url(/image/tat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.container-main h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin: 30px 0;
+}
+.active {
+    color: red;
+}
+
+.tatabae-detailes {
+    background-color: #163d57;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 40px auto;
+    position: relative;
+
+}
+
+.cusat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+    width: 100%;
+    text-align: center;
+}
+
+.eye-detailes {
+    background-color: #163d57;
+    color: #eee;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    display: none;
+}
+
+.cusat-item h4 {
+    font-size: 15px;
+    color: #fff;
+}
+
+.cusat-item p {
+    font-size: 15px;
+    margin: 20px 10px;
+    color: #ddd;
+
+}
+
+.fa-eye {
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+.eye-detailes h3 {
+    margin: 20px 0;
+    color: red;
+}
+
+/******** الجزء الخاص بصفحة تسجيل افراد *********/
+.Personlogin-container{
+    background-image: url(/image/cccc.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+}
+
+
+
+/*Start form style*/
+form {
+    background-color: #103751;
+    height: auto;
+    max-width: 300px;
+    margin: 25px auto;
+    border-radius: 8px;
+    padding: 9px;
+
+}
+
+button {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.58);
+}
+
+/*End form style*/
+
+
+
+/*****************************************/
+
+/*Start header*/
+form h1 {
+    text-align: center;
+    color: #fff;
+    padding-top: 30px;
+}
+
+form p {
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+   margin: 20px 0;
+}
+
+/*The link of the site in the p tag ***/
+form p>a {
+    color: #828999;
+    text-decoration: none;
+    transition: 0.3s
+}
+
+form p>a:hover {
+    color: #1da1f2
+}
+
+form p>a:active {
+    color: #1da1f2
+}
+
+/*End login header*/
+
+
+/* Start the input-info style*/
+.input-info {
+    margin-top: 30px;
+    margin-bottom: 15px
+}
+
+/*the containe div style*/
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #828999;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    background: none;
+    color: #fff;
+    margin: 5px 5px 5px 10px;
+    outline: none;
+    transition: 0.3s;
+    text-indent: 25px;
+    overflow: hidden;
+}
+
+.fa-refresh,
+.fa-lock,
+.fa-envelope,
+.fa-user-plus,
+.fa-user {
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 24px;
+    color: #828999;
+    display: block;
+}
+
+.input-info input:hover {
+    background: #435688
+}
+
+.input-info input[type="checkbox"] {
+    margin-left: 17px;
+    cursor: pointer;
+    margin-top: 7px
+}
+
+.input-info span {
+    color: #f1f1f1;
+    font-size: 11px;
+}
+
+.input-info span>a {
+    color: #1da1f2
+}
+
+.input-info span>a:hover {
+    color: #fff
+}
+
+/*End the input-info style*/
+
+/*start the tow button login and sign up*/
+.log-sign {
+    text-align: center;
+}
+
+/*the containe div style*/
+.signup,
+.login {
+    /*button login style*/
+    padding: 10px;
+    margin-top: 16px;
+    background: #435688;
+    color: #fff;
+    width: 103px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid #435688;
+    outline: none;
+}
+
+.signup {
+    /*button signup style*/
+    background: #9e3434;
+    border: 1px solid #9e3434;
+}
+
+
+.log-sign .signup>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*the signup link style*/
+.log-sign button:hover {
+    background: none;
+    border: 1px solid #828999;
+    color: #828999;
+}
+
+.send {
+    /*sugn up button at the signup.html page*/
+    padding: 10px;
+    margin-top: 16px;
+    background: #435688;
+    color: #fff;
+    width: 103px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid #435688;
+    outline: none;
+    margin-left: 32%
+}
+
+
+/*facebook social-media button style*/
+.social-media {
+    margin-bottom: 35px;
+}
+
+.social-media .btn1 {
+    /*facebook button*/
+    border: 0;
+    background: #3B5998;
+    color: #fff;
+    padding: 15px;
+    width: 90%;
+    margin-left: 16px;
+    margin-top: 14px;
+    border-radius: 5px;
+
+}
+
+.social-media .btn2 {
+    /*twitter button*/
+    border: 0;
+    padding: 15px;
+    margin-top: 11px;
+    width: 90%;
+    margin-left: 16px;
+    border-radius: 5px;
+    background: #1DA1F2;
+    color: #fff;
+
+}
+
+.social-media button>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/************/
+
+.forget-password {
+    text-align: center;
+}
+
+.forget-password a {
+    color: #1da1f2;
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.forget-password a:hover {
+    color: #fff
+}
+
+.forget-password a:active {
+    color: #fff
+}
+
+/*start form sign up*/
+
+
+
+/***** الجزء الخاص بصفحة  تسجيل شركات  *****/
+
+.form-container-company{
+    color: #fff;
+    text-align: center;
+  background-image: url(/image/business.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.comp-form{
+background-color: #103751;
+    height: auto;
+    padding: 40px;
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========
+media query
+
+============ */
+
+
+
+
+
+@media screen and (max-width: 875px) {
+    .nav-bar {
+        font-size: 12px;
+
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .nav-bar a {
+        display: none;
+
+    }
+
+    .menu-bar-icon {
+        display: block;
+    }
+
+    /* المهن المتاحة */
+    .cataigores {
+        justify-content: center;
+    }
+
+    .cat-sec {
+        width: 45%;
+    }
+
+    /* العملاء */
+    .customers {
+
+        display: block;
+    }
+
+    .customer-item {
+        margin: 30px auto;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 745px) {
+    .footer-item {
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        width: fit-content;
+    }
+
+    .footer-logo p {
+        font-size: 13px;
+    }
+
+    .comtain-footer {
+        height: 470px;
+    }
+
+    .app-img img {
+        width: 50%;
+    }
+}
+
+
+
+/* small screen */
+
+
+@media screen and (max-width: 550px) {
+    .cat-sec {
+        width: 80%;
+    }
+
+    .comtain-footer {
+        height: 445px;
+    }
+
+    .app-img img {
+        width: 50%;
+    }
+
+    .form-container-talap {
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 375px) {
+
+    .comp-form{
+        width: min-content;
+        padding: 0;
+    }
 }

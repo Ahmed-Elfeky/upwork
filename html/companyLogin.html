@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Tajawal&display=swap" rel="stylesheet">
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>تسجيل شركات</title>
+</head>
+
+<body>
+    <div class="form-container-company">
+
+
+    <div class="companylogin-container">
+        <!-- menu header start -->
+        <div class="header-container">
+            <div class="menu-item">
+                <div class="logo">
+                    <a href="/index.html"> <img src="/image/logo-alt.webp"> </a>
+                </div>
+                <div class="nav-bar">
+                    <a href="/html/personLogin.html"> تسجيل أفراد</a>
+                    <a href="/html/companyLogin.html">تسجيل شركات</a>
+                    <a href="/html/talap.html"> طلب عمالة </a>
+                    <a href="/html/3omala.html"> تتبع طلبك </a>
+                    <a href="/html/cotact.html"> تواصل معنا</a>
+                </div>
+                <div class="lang">
+                    <h5>English</h5>
+                    <a href="#"><img src="/image/flagEnglish.png"></a>
+                </div>
+            </div>
+
+            <div class="menu-bar-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="mobil-icon">
+                <div id="mobile" class="nav-bar">
+                    <a href="/html/personLogin.html"> تسجيل أفراد</a>
+                    <a href="/html/companyLogin.html">تسجيل شركات</a>
+                    <a href="/html/talap.html"> طلب عمالة </a>
+                    <a href="/html/3omala.html"> تتبع طلبك </a>
+                    <a href="/html/cotact.html"> تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+        <!-- menu header end -->
+
+
+
+
+
+
+        <!--start login form-->
+
+            <div class="company-form">
+
+                <form class="comp-form">
+                    <div class="info-comp-form">
+                        <label for="fname">اسم الشركة</label><br>
+                        <input type="text" id="fname" name="fname" checked><br>
+                        <label for="fname">مجال الشركة</label><br>
+                        <input type="text" id="fname" name="fname" checked><br>
+                        <label for="num"> العنوان </label><br>
+                        <input type="text" id="num"><br>
+                        <label for="phone">رقم الشركة</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="123-45-678"
+                            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+
+
+                        <h6 class="text-prb"> نبذه مختصرة عن الشركة</h6>
+                        <textarea id="mosh" cols="20" rows="2"> </textarea>
+                    </div>
+
+                    <div class="input-info">
+                        <!--the input div containe the information of the user-->
+                        <i class="fa fa-user"></i>
+                        <!--user name-->
+                        <input type="text" placeholder="User-Name">
+                        <i class="fa fa-envelope"></i>
+                        <!--user email-->
+                        <input type="email" placeholder="E-mail" required autocomplete="off" validate>
+                        <i class="fa fa-lock"></i>
+                        <!--yser password-->
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <div class="log-sign">
+                        <!--the login button and the sign up button>[to the sign up page]-->
+                        <button class="login" form="loginform"><i class="fa fa-mail-forward (alias)"></i> Log
+                            In</button>
+                        <!--log in-->
+
+                        <a href="#" target="_blank">
+                            <!--the link to the sign up page-->
+                            <button class="signup" form="signupform"><i class="fa fa-plus"></i> Sign Up</button>
+                        </a>
+                    </div>
+                    <!--end of the log-sign-->
+                </form>
+            </div>
+
+        <!--End login form-->
+
+
+
+        <div class="comtain-footer">
+            <div class="footer">
+
+                <div class="footer-item">
+                    <div class="app-img">
+                        <a href="/index.html"><img src="/image/cms-footer-1.png"></a>
+                        <a href="/index.html"><img src="/image/cms-footer-2.png"></a>
+                        <h3>تطبيق جوال مجاني
+                            لهاتفك</h3>
+                    </div>
+
+                    <div class="footer-nav">
+                        <a href="/html/personLogin.html"> تسجيل أفراد</a>
+                        <a href="/html/companyLogin.html">تسجيل شركات</a>
+                        <a href="/html/talap.html"> طلب عمالة </a>
+                        <a href="/html/cotact.html"> تواصل معنا</a>
+                    </div>
+
+                    <div class="footer-logo">
+                        <a href="/index.html"> <img src="/image/logo-alt.webp" alt="logo"></a>
+                        <p>أول وأكبر موقع سعودي يضم كل المكاتب والشركات <br> ويعرض كل العماله المتاحه لديهم تسهيلا
+                            على
+                            الباحث عن
+                            الوظيفة</p>
+                        <div class="footer-icon">
+                            <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a id="whatss" href="https://www.whatsapp.com" target="_blank"><i id="whatsapp"
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
