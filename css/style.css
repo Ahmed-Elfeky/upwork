@@ -226,7 +226,7 @@ html {
   margin: 40px auto;
 }
 
-.btn-sub {
+/* .btn-sub {
   padding: 5px 15px;
   margin-left: 40px;
   border: none;
@@ -243,7 +243,7 @@ html {
 .btn-sub:hover {
   cursor: pointer;
   background-color: red;
-}
+} */
 
 /* الدول المتاحه  */
 .dewal-container {
@@ -785,9 +785,9 @@ form {
   padding: 9px;
 }
 
-button {
+/* button {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.58);
-}
+} */
 
 /*End form style*/
 
@@ -850,7 +850,6 @@ input[type="tel"],
 
 input[type="tel"] {
   border: #8289997a solid 1px !important;
-  text-align: center;
 }
 
 .fa-refresh,
@@ -1011,14 +1010,6 @@ input[type="tel"] {
   background-size: cover;
 }
 
-.comp-form {
-  background-color: #103751;
-  height: auto;
-  width: 400px;
-  margin: 50px auto;
-  border-radius: 8px;
-}
-
 /* الجزء الخاص بصفحة مكتب الاستقدام */
 .container-estekdam {
   background-image: url(/image/businessman.webp);
@@ -1037,8 +1028,7 @@ input[type="tel"] {
   position: relative;
 }
 
-#est,
-#phon {
+#est {
   position: absolute;
   top: 315px;
   left: 30px;
@@ -1047,6 +1037,9 @@ input[type="tel"] {
 
 #phon {
   top: 277px;
+  position: absolute;
+  left: 30px;
+  color: #828999;
 }
 
 .form-container-estekdam input[type="tel"] {
@@ -1159,12 +1152,5 @@ media query
 
   .cusat-item {
     display: block;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .comp-form {
-    width: min-content;
-    padding: 0;
   }
 }
