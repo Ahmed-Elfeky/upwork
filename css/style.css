@@ -628,7 +628,7 @@ html {
 input[type="tel"],
 input[type="number"] {
   margin: 15px 0;
-  padding: 5px 28px;
+  padding: 5px;
   outline: none;
   border: none;
   border-radius: 6px;
@@ -637,8 +637,11 @@ input[type="number"] {
   color: #fff;
 }
 
+
 .form-container-talap input[type="number"] {
   text-align: center;
+  inline-size: 90%;
+
 }
 
 .sub-talap,
@@ -1024,22 +1027,22 @@ input[type="tel"] {
   color: #fff;
 }
 
-.form-container-estekdam form {
-  position: relative;
-}
 
+.estekdam-icon{
+    position: relative;
+}
 #est {
-  position: absolute;
-  top: 315px;
-  left: 30px;
-  color: #828999;
+    top: 81px;
+    position: absolute;
+    left: 25px;
+    color: #828999;
 }
 
 #phon {
-  top: 277px;
-  position: absolute;
-  left: 30px;
-  color: #828999;
+    top: 43px;
+    position: absolute;
+    left: 25px;
+    color: #828999;
 }
 
 .form-container-estekdam input[type="tel"] {
