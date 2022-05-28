@@ -178,11 +178,12 @@ html {
 
 
 #mobile {
-    position: fixed;
-    width: 120px;
+    position: absolute;
+    width: 129px;
     top: 70px;
     bottom: 300px;
     right: 0;
+    height: 400px;
     background-color: rgba(6, 43, 70, 0.98);
     z-index: 10;
     border-radius: 0 0 0 140px;
@@ -194,22 +195,6 @@ html {
     margin: 20px auto;
     width: 90%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* language icon => nav menu */
 
@@ -246,12 +231,6 @@ html {
     margin: 0 auto;
 
 }
-
-/* .in-form {
-    width: 80% !important;
-
-} */
-
 .container-form .select {
 
     padding: 5px 10px;
@@ -285,18 +264,40 @@ html {
 
 }
 
+/* الدول المتاحه  */
+.dewal-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
 
+.dewal-item {
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #143f5c;
+    padding: 10px 0;
+    transition: all 0.6s;
 
+}
 
+.dewal-item:hover {
+    background-color: #3B5998;
+    cursor: pointer;
+}
 
+.dewal-item img {
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+}
 
-
-
-
-
-
-
-
+.dewal-item h3 {
+    color: #fff;
+    font-size: 22px;
+}
 /* category-title */
 
 
@@ -307,12 +308,10 @@ html {
 .category-title h3 {
     font-size: 20px;
     color: rgba(6, 43, 70, 0.98);
-    margin: 15px 0;
+    margin: 35px 0;
     position: relative;
 }
-#elmehan{
-    margin: 100px 0;
-}
+
 .category-title h3:hover {
     cursor: pointer;
 }
@@ -355,6 +354,11 @@ html {
     padding: 5px;
     background-color: rgba(6, 43, 70, 0.98);
     color: #FBFBFB;
+    transition: all 0.8s;
+}
+
+.cat-item:hover {
+    background-color: rgba(14, 73, 114, 0.98);
 }
 
 .cat-item img {
@@ -365,7 +369,7 @@ html {
     max-height: 250px;
 }
 
-.cat-item img:hover {
+.cat-item:hover img {
     transform: scale(1.2);
 }
 
@@ -383,28 +387,11 @@ html {
     color: aquamarine;
 }
 
-.cat-btn {
-    padding: 5px 8px;
-    border-radius: 8px;
-    margin: 15px auto;
-    font-size: 15px;
-    color: #163d57;
-    transition: all 1s;
-
-}
-
-.cat-btn:hover {
-    cursor: pointer;
-    background-color: #bf9149;
-    color: #FBFBFB;
-
-}
-
 
 /************ customers start**************/
 .customers {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .customer-item {
@@ -413,8 +400,12 @@ html {
     border-radius: 8px;
     text-align: center;
     padding: 15px;
-}
+    transition: all 0.6s;
 
+}
+.customer-item:hover{
+    background-color: rgba(14, 73, 114, 0.98);
+}
 .customer-item .fa-theater-masks {
     color: #bf9149;
     font-size: 33px;
@@ -446,24 +437,12 @@ html {
     font-size: 18px;
 }
 
-
-
-
-
-
-
-
-
-
 /* footer section*/
 .comtain-footer {
     background-image: url(/image/foteerr.jpg);
     background-position: top;
     background-size: cover;
-
 }
-
-
 .footer {
     height: 250px;
     position: relative;
@@ -642,29 +621,12 @@ html {
     background-color: red;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*** الجزء الخاص بشاشة طلب عمال*******/
 /* menu */
 .container-talap {
     background-image: url(/image/talapCover.png);
     background-size: cover;
     background-repeat: no-repeat;
-
-
 }
 
 .overLay {
@@ -679,7 +641,6 @@ html {
     text-align: center;
     direction: rtl;
     width: 400px;
-  
     display: block;
     margin: 100px auto;
     padding: 20px 0;
@@ -729,9 +690,11 @@ input[type=tel] {
     color: #fff;
     transition: all 0.5s;
 }
-.end-tatabae{
+
+.end-tatabae {
     margin-top: 0 !important;
 }
+
 .sub-talap:hover,
 .end-tatabae:hover {
     background-color: red;
@@ -749,17 +712,9 @@ input[type=tel] {
 
 
 #mosh {
-    text-align: center;
-    padding: 20px;
-    margin: 0 auto;
-    width: 80%;
-    border: none;
-    overflow: auto;
-    outline: none;
-    border-radius: 8px;
-    background-color: rgba(221, 218, 218, 0.1);
-    color: #fff;
+    text-align: right;
     font-size: 15px;
+    border: #8289997a solid 1px;
 }
 
 .text-prb {
@@ -773,7 +728,6 @@ input[type=tel] {
 
 .num-of-talap {
     background-color: #163d57;
-    padding: 15px;
     border-radius: 10px;
     width: 50%;
     padding: 30px 0;
@@ -783,7 +737,7 @@ input[type=tel] {
 }
 
 .num-of-talap input[type=number] {
-    padding: 5px 75px;
+    padding: 6px 0;
     border: none;
     outline: none;
     border-radius: 8px;
@@ -796,12 +750,14 @@ input[type=tel] {
     background-repeat: no-repeat;
 
 }
+
 .container-main h2 {
     text-align: center;
     color: #fff;
     font-size: 30px;
     margin: 30px 0;
 }
+
 .active {
     color: red;
 }
@@ -813,7 +769,6 @@ input[type=tel] {
     width: 80%;
     margin: 40px auto;
     position: relative;
-
 }
 
 .cusat-item {
@@ -857,12 +812,11 @@ input[type=tel] {
 }
 
 /******** الجزء الخاص بصفحة تسجيل افراد *********/
-.Personlogin-container{
+.Personlogin-container {
     background-image: url(/image/cccc.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-  
 }
 
 
@@ -899,7 +853,7 @@ form p {
     color: #fff;
     font-size: 11px;
     text-align: center;
-   margin: 20px 0;
+    margin: 20px 0;
 }
 
 /*The link of the site in the p tag ***/
@@ -929,18 +883,24 @@ form p>a:active {
 /*the containe div style*/
 input[type="text"],
 input[type="email"],
-input[type="password"] {
-    border: 1px solid #828999;
+input[type="password"],
+input[type="tel"],
+#mosh {
     padding: 10px;
     border-radius: 5px;
     width: 90%;
     background: none;
     color: #fff;
-    margin: 5px 5px 5px 10px;
+    margin: 5px 10px;
     outline: none;
     transition: 0.3s;
     text-indent: 25px;
     overflow: hidden;
+}
+
+input[type="tel"] {
+    border: #8289997a solid 1px !important;
+    text-align: center;
 }
 
 .fa-refresh,
@@ -1098,37 +1058,58 @@ input[type="password"] {
 
 /***** الجزء الخاص بصفحة  تسجيل شركات  *****/
 
-.form-container-company{
+.form-container-company {
     color: #fff;
     text-align: center;
-  background-image: url(/image/business.webp);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+    background-image: url(/image/business.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-.comp-form{
-background-color: #103751;
+
+.comp-form {
+    background-color: #103751;
     height: auto;
-    padding: 40px;
     width: 400px;
     margin: 50px auto;
     border-radius: 8px;
 }
 
+/* الجزء الخاص بصفحة مكتب الاستقدام */
+.container-estekdam{
+    background-image: url(/image/businessman.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.form-container-estekdam{
+    margin-top: 70px;
+    text-align: center;
+    color: #fff;
+}
+.form-container-estekdam form{
+    position: relative;
+}
+#est,#phon{
+    position: absolute;
+    top: 315px;
+    left: 30px;
+    color: #828999;
+}
+#phon{
+    top: 277px;
+}
+.form-container-estekdam input[type=tel]{
+    text-align: left;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.form-container-estekdam span{
+  font-size: 14px;
+}
+.form-container-estekdam input[type=text]:hover,
+.form-container-estekdam input[type=tel]:hover{
+    background-color: #135178;
+}
 
 
 
@@ -1139,16 +1120,16 @@ media query
 
 ============ */
 
-
-
-
-
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 1040px) {
     .nav-bar {
         font-size: 12px;
 
     }
-}
+    .nav-bar a {
+        margin: 0 8px;
+        padding: 5px;
+    }
+    }
 
 @media screen and (max-width: 745px) {
     .nav-bar a {
@@ -1160,29 +1141,7 @@ media query
         display: block;
     }
 
-    /* المهن المتاحة */
-    .cataigores {
-        justify-content: center;
-    }
-
-    .cat-sec {
-        width: 45%;
-    }
-
-    /* العملاء */
-    .customers {
-
-        display: block;
-    }
-
-    .customer-item {
-        margin: 30px auto;
-        width: 80%;
-    }
-}
-
-
-@media screen and (max-width: 745px) {
+   
     .footer-item {
         display: grid;
         justify-items: center;
@@ -1198,13 +1157,38 @@ media query
     }
 
     .comtain-footer {
-        height: 470px;
+        height: 500px;
     }
 
     .app-img img {
         width: 50%;
     }
+
+    .dewal-item {
+        width: 45%;
+    }
+
+    /* المهن المتاحة */
+    .cataigores {
+        justify-content: center;
+    }
+
+    .cat-sec {
+        width: 45%;
+    }
+
+    /* العملاء */
+    .customers {
+        display: block;
+    }
+
+    .customer-item {
+        margin: 30px auto;
+        width: 90%;
+    }
 }
+
+
 
 
 
@@ -1215,11 +1199,6 @@ media query
     .cat-sec {
         width: 80%;
     }
-
-    .comtain-footer {
-        height: 445px;
-    }
-
     .app-img img {
         width: 50%;
     }
@@ -1228,10 +1207,14 @@ media query
         width: 80%;
     }
 
+    .dewal-item {
+        width: 55%;
+    }
 }
+
 @media screen and (max-width: 375px) {
 
-    .comp-form{
+    .comp-form {
         width: min-content;
         padding: 0;
     }

@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,14 +13,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- style link -->
     <link rel="stylesheet" href="/css/style.css" />
-
-    <title>تسجيل افراد</title>
+    <title>استقدام</title>
 </head>
 
 <body>
-    <div class="Personlogin-container">
+    <div class="container-estekdam">
         <!-- menu header start -->
         <div class="header-container">
             <div class="menu-item">
@@ -38,7 +36,7 @@
                 </div>
                 <div class="lang">
                     <h5>English</h5>
-                    <a href="#"><img src="/image/flagEnglish.png" /></a>
+                    <a href="#"><img src="/image/flag/flagEnglish.png" /></a>
                 </div>
             </div>
 
@@ -58,53 +56,32 @@
         </div>
         <!-- menu header end -->
 
-        <!--start login form-->
-
-        <form id="loginform" action="#">
-            <!--action="the site link"-->
-            <!--start header-->
-            <h1>LOG IN</h1>
-
-            <!--site link-->
-            <!--end site-->
-
-            <div class="input-info">
-                <!--the input div containe the information of the user-->
-                <i class="fa fa-user"></i>
-
-                <!--user email-->
-                <input type="email" placeholder="E-mail" required autocomplete="off" validate />
-                <i class="fa fa-lock"></i>
-                <!--yser password-->
-                <input type="password" placeholder="Password" />
-                <!--the checkbox to make the browser remember the user-->
+        <!-- form section start -->
+        <div class="form-container-estekdam">
+            <form>
+                <label for="fname">اسم المكتب</label><br />
+                <input type="text" id="fname" name="fname" checked /><br />
+                <label for="Cname"> اسم صاحب المكتب </label><br />
+                <input type="text" id="Cname" name="Cname" checked /><br />
+                <label for="Sname">السجل التجاري</label><br />
+                <input type="text" id="Sname" name="Sname" checked /><br />
+                <label for="num"> رقم الهاتف</label><br />
+                <input type="tel" id="num" name="tel" />
+                <i id="phon" class="fa-solid fa-phone-flip"></i>
+                <label for="whats"> </label>
+                <input type="tel" id="whats" name="tel" /> <br />
+                <i id="est" class="fa-brands fa-whatsapp"></i>
+                <label for="logo">لوجو الشركة</label><br />
+                <input id="logo" type="image" src="/image/logo-alt.webp" width="80px" alt="companyLogo" />
+                <br />
                 <input type="checkbox" />
-                <span>Remember Me</span><br />
-            </div>
+                <span> الموافقة علي الشروط والاحكام</span><br />
 
-            <div class="log-sign">
-                <!--the login button and the sign up button>[to the sign up page]-->
-                <button class="login" form="loginform">
-                    <i class="fa fa-mail-forward (alias)"></i> Log In
-                </button>
-                <!--log in-->
-
-                <a href="#" target="_blank">
-                    <!--the link to the sign up page-->
-                    <button class="signup" form="signupform">
-                        <i class="fa fa-plus"></i> Sign Up
-                    </button>
-                </a>
-            </div>
-            <!--end of the log-sign-->
-
-            <p class="forget-password">
-                If you forget your password please <a href="#">click here</a>
-            </p>
-        </form>
-
-        <!--End login form-->
-
+                <button class="sub-talap" type="submit">ارسال</button>
+            </form>
+        </div>
+        <!-- form section end -->
+        <!-- footer section start -->
         <div class="comtain-footer">
             <div class="footer">
                 <div class="footer-item">
