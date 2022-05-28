@@ -1,37 +1,37 @@
 * {
-    text-decoration: none;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    /* font-family: 'Aref Ruqaa', serif; */
-
-    font-family: 'Tajawal', sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Tajawal", sans-serif;
 }
 
 body {
-    background-color: #dbe3e9;
+  background-color: #dbe3e9;
+}
 
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 /****** scrollbar start*****/
 html::-webkit-scrollbar {
-    width: .8rem;
-
+  width: 0.8rem;
 }
 
 html::-webkit-scrollbar-track {
-    background: #262626;
+  background: #262626;
 }
 
 html::-webkit-scrollbar-thumb {
-    background: rgb(79, 8, 150);
-    border-radius: 5rem;
+  background: rgb(79, 8, 150);
+  border-radius: 5rem;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /****** scrollbar end*****/
@@ -39,844 +39,795 @@ html {
 /*********** form-popup start *********/
 
 .form-container label b {
-    color: blue;
+  color: blue;
 }
 
 /* The popup form - hidden by default */
 .form-popup {
-    transform: scale(0);
-    position: fixed;
-    border-radius: 8px;
-    top: 100px;
-    right: 30%;
-    transition: all 1s;
+  transform: scale(0);
+  position: fixed;
+  border-radius: 8px;
+  top: 100px;
+  right: 30%;
+  transition: all 1s;
 }
 
 /* Add styles to the form container */
 .form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: yellowgreen;
-    border-radius: 8px;
-
+  max-width: 300px;
+  padding: 10px;
+  background-color: yellowgreen;
+  border-radius: 8px;
 }
 
 /* Full-width input fields */
-.form-container input[type=text],
-.form-container input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    border-radius: 8px;
-    background: #f1f1f1;
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 8px;
+  background: #f1f1f1;
 }
 
 /* When the inputs get focus, do something */
-.form-container input[type=text]:focus,
-.form-container input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
 }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-    background-color: blueviolet;
-    color: white;
-    border-radius: 15px;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
-    opacity: 0.8;
-    font-size: 20px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 15px;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  font-size: 20px;
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-    background-color: red;
+  background-color: red;
 }
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover {
-    opacity: 1;
-}
-
-
-
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-
+  opacity: 1;
 }
 
 /* menu section */
 .menu-item {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 17px;
-    height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 17px;
+  height: 70px;
 }
 
 .logo img {
-    width: 100%;
-    height: 50px;
+  width: 100%;
+  height: 50px;
 }
 
 .nav-bar a {
-    margin: 0 10px;
-    padding: 5px 15px;
-    border-radius: 6px;
-    color: #FBFBFB;
-    border: rgba(238, 238, 238, 0.221) solid 1px;
-    transition: all 0.7s;
+  margin: 0 10px;
+  padding: 5px 15px;
+  border-radius: 6px;
+  color: #fbfbfb;
+  border: rgba(238, 238, 238, 0.221) solid 1px;
+  transition: all 0.7s;
 }
 
 .nav-bar a:hover {
-
-    background-color: rgba(255, 0, 0, 0.578);
-
+  background-color: rgba(255, 0, 0, 0.578);
 }
 
 .menu-bar ul {
-    position: absolute;
-    top: 77px;
-    right: 1px;
+  position: absolute;
+  top: 77px;
+  right: 1px;
 }
 
 .menu-bar a {
-    display: block;
-    background-color: #eee;
-    padding: 20px;
+  display: block;
+  background-color: #eee;
+  padding: 20px;
 }
 
 .menu-item {
-    background-color: rgba(6, 43, 70, 0.98);
+  background-color: rgba(6, 43, 70, 0.98);
 }
 
 /* icon bar => small screen  */
 .menu-bar-icon {
-    display: none;
-    color: #eee;
-    font-size: 22px;
-    position: absolute;
-    top: 20px;
-    right: 15px;
+  display: none;
+  color: #eee;
+  font-size: 22px;
+  position: absolute;
+  top: 20px;
+  right: 15px;
 }
 
 .menu-bar-icon:hover {
-    color: red;
-    cursor: pointer;
-
+  color: red;
+  cursor: pointer;
 }
 
 /* mobil-icon-bar */
 
-
 #mobile {
-    position: absolute;
-    width: 129px;
-    top: 70px;
-    bottom: 300px;
-    right: 0;
-    height: 400px;
-    background-color: rgba(6, 43, 70, 0.98);
-    z-index: 10;
-    border-radius: 0 0 0 140px;
-    display: none;
+  position: absolute;
+  width: 129px;
+  top: 70px;
+  bottom: 300px;
+  right: 0;
+  height: 400px;
+  background-color: rgba(6, 43, 70, 0.98);
+  z-index: 10;
+  border-radius: 0 0 0 140px;
+  display: none;
 }
 
 #mobile a {
-    display: block;
-    margin: 20px auto;
-    width: 90%;
+  display: block;
+  margin: 20px auto;
+  width: 90%;
 }
 
 /* language icon => nav menu */
 
 .lang {
-    display: flex;
-    cursor: pointer;
-    justify-content: flex-end;
-    width: min-content;
-
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
+  width: min-content;
 }
 
 .lang h5 {
-    color: #eee;
-    font-size: 10px;
-    font-weight: 400;
-    margin-right: 5px;
+  color: #eee;
+  font-size: 10px;
+  font-weight: 400;
+  margin-right: 5px;
 }
 
 .lang img {
-    width: 20px;
+  width: 20px;
 }
 
 /* slider section */
 .owl-carousel .owl-item img {
-    max-height: 380px;
+  max-height: 380px;
 }
 
 /* country select section start */
 
-
 /* country select section end */
 .container-form {
-    height: 180px;
-    margin: 0 auto;
-
+  height: 180px;
+  margin: 0 auto;
 }
-.container-form .select {
 
-    padding: 5px 10px;
-    background-color: rgba(6, 43, 70, 0.98);
-    border: none;
-    color: #fff;
-    outline: none;
-    border-radius: 6px;
-    font-size: 19px;
-    display: block;
-    margin: 40px auto;
+.container-form .select {
+  padding: 5px 10px;
+  background-color: rgba(6, 43, 70, 0.98);
+  border: none;
+  color: #fff;
+  outline: none;
+  border-radius: 6px;
+  font-size: 19px;
+  display: block;
+  margin: 40px auto;
 }
 
 .btn-sub {
-    padding: 5px 15px;
-    margin-left: 40px;
-    border: none;
-    background-color: rgba(6, 43, 70, 0.98);
-    color: #fff;
-    outline: none;
-    font-size: 18px;
-    border-radius: 6px;
-    transition: all 0.7s;
-    display: block;
-    margin: 10px auto;
+  padding: 5px 15px;
+  margin-left: 40px;
+  border: none;
+  background-color: rgba(6, 43, 70, 0.98);
+  color: #fff;
+  outline: none;
+  font-size: 18px;
+  border-radius: 6px;
+  transition: all 0.7s;
+  display: block;
+  margin: 10px auto;
 }
 
 .btn-sub:hover {
-    cursor: pointer;
-    background-color: red;
-
+  cursor: pointer;
+  background-color: red;
 }
 
 /* الدول المتاحه  */
 .dewal-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 .dewal-item {
-    width: 20%;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #143f5c;
-    padding: 10px 0;
-    transition: all 0.6s;
-
+  width: 20%;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #143f5c;
+  padding: 10px 0;
+  transition: all 0.6s;
 }
 
 .dewal-item:hover {
-    background-color: #3B5998;
-    cursor: pointer;
+  background-color: #3b5998;
+  cursor: pointer;
 }
 
 .dewal-item img {
-    width: 100px;
-    border-radius: 50%;
-    height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
 }
 
 .dewal-item h3 {
-    color: #fff;
-    font-size: 22px;
+  color: #fff;
+  font-size: 22px;
 }
+
 /* category-title */
 
-
 .category-title {
-    text-align: center;
+  text-align: center;
 }
 
 .category-title h3 {
-    font-size: 20px;
-    color: rgba(6, 43, 70, 0.98);
-    margin: 35px 0;
-    position: relative;
+  font-size: 20px;
+  color: rgba(6, 43, 70, 0.98);
+  margin: 35px 0;
+  position: relative;
 }
 
 .category-title h3:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .category-title h3::after {
-    content: "";
-    width: 60px;
-    color: #2964d1;
-    position: absolute;
-    height: 2px;
-    top: 33px;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #2964d1;
-    transition: all 1s;
+  content: "";
+  width: 60px;
+  color: #2964d1;
+  position: absolute;
+  height: 2px;
+  top: 33px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2964d1;
+  transition: all 1s;
 }
 
 .category-title h3:hover:after {
-    width: 100px;
+  width: 100px;
 }
 
 .cataigores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
 }
 
 .cat-sec {
-    width: 30%;
-    text-align: center;
-    position: relative;
-
+  width: 30%;
+  text-align: center;
+  position: relative;
 }
 
 .cat-item {
-    border-radius: 8px;
-    padding: 5px;
-    background-color: rgba(6, 43, 70, 0.98);
-    color: #FBFBFB;
-    transition: all 0.8s;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: rgba(6, 43, 70, 0.98);
+  color: #fbfbfb;
+  transition: all 0.8s;
 }
 
 .cat-item:hover {
-    background-color: rgba(14, 73, 114, 0.98);
+  background-color: rgba(14, 73, 114, 0.98);
 }
 
 .cat-item img {
-    width: 80%;
-    border-radius: 8px;
-    margin-top: 20px;
-    transition: all 0.8s;
-    max-height: 250px;
+  width: 80%;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: all 0.8s;
+  max-height: 250px;
 }
 
 .cat-item:hover img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .cat-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: #FBFBFB;
-    margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fbfbfb;
+  margin-top: 20px;
 }
 
 .cat-text {
-    font-size: 13px;
-    font-weight: 400;
-    margin: 10px 20px;
-    color: aquamarine;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 10px 20px;
+  color: aquamarine;
 }
-
 
 /************ customers start**************/
 .customers {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .customer-item {
-    width: 30%;
-    background-color: #163d57;
-    border-radius: 8px;
-    text-align: center;
-    padding: 15px;
-    transition: all 0.6s;
+  width: 30%;
+  background-color: #163d57;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.6s;
+}
 
+.customer-item:hover {
+  background-color: rgba(14, 73, 114, 0.98);
 }
-.customer-item:hover{
-    background-color: rgba(14, 73, 114, 0.98);
-}
+
 .customer-item .fa-theater-masks {
-    color: #bf9149;
-    font-size: 33px;
+  color: #bf9149;
+  font-size: 33px;
 }
 
 .customer-item p {
-    font-size: 15px;
-    color: #ddd;
-    margin: 20px auto;
-    width: 80%;
-    text-align: left;
-
+  font-size: 15px;
+  color: #ddd;
+  margin: 20px auto;
+  width: 80%;
+  text-align: left;
 }
 
 .customer-item img {
-    width: 100%;
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
+  width: 100%;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
 
 .customer-item h3 {
-    color: #FBFBFB;
-    margin: 10px 0;
+  color: #fbfbfb;
+  margin: 10px 0;
 }
 
 .customer-item .starRate {
-    color: #bf9149;
-    font-size: 18px;
+  color: #bf9149;
+  font-size: 18px;
 }
 
 /* footer section*/
 .comtain-footer {
-    background-image: url(/image/foteerr.jpg);
-    background-position: top;
-    background-size: cover;
+  background-image: url(/image/foteerr.jpg);
+  background-position: top;
+  background-size: cover;
 }
+
 .footer {
-    height: 250px;
-    position: relative;
-    margin-top: 80px;
-    width: 100%;
-    color: #FBFBFB;
+  height: 250px;
+  position: relative;
+  margin-top: 80px;
+  width: 100%;
+  color: #fbfbfb;
 }
 
 .footer-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .app-img,
 .footer-logo {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-logo {
-    flex-grow: 0.5;
-
+  flex-grow: 0.5;
 }
 
 .app-img {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .app-img h3 {
-    font-size: 12px;
-    font-weight: 400;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .app-img img {
-    width: 50%;
+  width: 50%;
 }
 
 .fa-brands {
-    color: #FBFBFB;
-    font-size: 22px;
-    margin-right: 20px;
-    transition: all 0.7s;
-    margin-top: 20px;
+  color: #fbfbfb;
+  font-size: 22px;
+  margin-right: 20px;
+  transition: all 0.7s;
+  margin-top: 20px;
 }
 
 .fa-brands:hover {
-    color: red;
-    transform: scale(1.2);
-
+  color: red;
+  transform: scale(1.2);
 }
 
 .footer-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 .footer-nav a {
-    color: #FBFBFB;
-    padding: 4px;
-    margin-top: 30px;
-    border: #534a4a solid 1px;
-    border-radius: 6px;
-    transition: all 1s;
-    width: max-content;
+  color: #fbfbfb;
+  padding: 4px;
+  margin-top: 30px;
+  border: #534a4a solid 1px;
+  border-radius: 6px;
+  transition: all 1s;
+  width: max-content;
 }
 
 .footer-nav a:hover {
-    color: #fff;
-    transform: scale(1.1);
-    background-color: red;
-
+  color: #fff;
+  transform: scale(1.1);
+  background-color: red;
 }
 
 #whatsapp {
-    position: absolute;
-    right: 2px;
-    bottom: 170px;
-    color: #fff;
-    font-size: 40px;
-    background-color: goldenrod;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    border-radius: 50%;
+  position: absolute;
+  right: 2px;
+  bottom: 170px;
+  color: #fff;
+  font-size: 40px;
+  background-color: goldenrod;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
 }
 
 #whatsapp::after {
-    content: "";
-    display: block;
-    position: absolute;
-    border: 2px solid #25d366;
-    left: -20px;
-    right: -20px;
-    top: -20px;
-    bottom: -20px;
-    border-radius: 50%;
-    transform: scale(0);
-    animation: whatsapp 1.5s linear infinite;
-
+  content: "";
+  display: block;
+  position: absolute;
+  border: 2px solid #25d366;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: whatsapp 1.5s linear infinite;
 }
 
 @keyframes whatsapp {
-    0% {
-        transform: scale(0, 0);
-    }
+  0% {
+    transform: scale(0, 0);
+  }
 
-    25% {
-        transform: scale(0.25, 0.25);
-    }
+  25% {
+    transform: scale(0.25, 0.25);
+  }
 
-    50% {
-        transform: scale(0.5, 0.5);
-    }
+  50% {
+    transform: scale(0.5, 0.5);
+  }
 
-    75% {
-        transform: scale(0.75, 0.75);
-    }
+  75% {
+    transform: scale(0.75, 0.75);
+  }
 
-    100% {
-        transform: scale(1, 1);
-    }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
-
-
 #arrow-up {
-    position: absolute;
-    right: 20px;
-    cursor: pointer;
-    bottom: 255px;
-    background-color: red;
-    color: #fff;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  bottom: 255px;
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
 }
 
 /***** paragraph *****/
 .right-sec {
-    width: 40%;
-    margin-top: 100px;
-    margin-left: 30px;
+  width: 40%;
+  margin-top: 100px;
+  margin-left: 30px;
 }
 
 .right-sec p {
-    color: #FBFBFB;
-    font-size: 22px;
-    text-align: center;
-    font-weight: 600;
-    word-spacing: 3px;
-    font-family: 'Aref Ruqaa', serif;
+  color: #fbfbfb;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+  word-spacing: 3px;
+  font-family: "Aref Ruqaa", serif;
 }
 
 .join {
-    background-color: #ddd;
-    padding: 5px 20px;
-    border-radius: 8px;
-    color: #000;
-    font-size: 20px;
-    margin-top: 80px;
-    margin-left: 100px;
-    transition: all 0.6s;
-    outline: none;
-    border: none;
+  background-color: #ddd;
+  padding: 5px 20px;
+  border-radius: 8px;
+  color: #000;
+  font-size: 20px;
+  margin-top: 80px;
+  margin-left: 100px;
+  transition: all 0.6s;
+  outline: none;
+  border: none;
 }
 
 .join:hover {
-    color: #fff;
-    cursor: pointer;
-    background-color: red;
+  color: #fff;
+  cursor: pointer;
+  background-color: red;
 }
 
 /*** الجزء الخاص بشاشة طلب عمال*******/
 /* menu */
 .container-talap {
-    background-image: url(/image/talapCover.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(/image/talapCover.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .overLay {
-    background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* form container */
 .form-container-talap {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    direction: rtl;
-    width: 400px;
-    display: block;
-    margin: 100px auto;
-    padding: 20px 0;
-    border-radius: 8px;
-    background-color: #163d57;
-    box-shadow: 0 0 10px 1px #fff;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  direction: rtl;
+  width: 400px;
+  display: block;
+  margin: 100px auto;
+  padding: 20px 0;
+  border-radius: 8px;
+  background-color: #163d57;
+  box-shadow: 0 0 10px 1px #fff;
 }
 
 .form-container-talap label {
-    font-size: 17px;
+  font-size: 17px;
 }
 
-.form-container-talap input[type=text],
-input[type=tel] {
-    margin: 15px 0;
-    padding: 5px 20px;
-    outline: none;
-    border: none;
-    border-radius: 6px;
-    font-size: 20px;
-    background-color: rgba(221, 218, 218, 0.1);
-    color: #fff;
+.form-container-talap input[type="text"],
+input[type="tel"],
+input[type="number"] {
+  margin: 15px 0;
+  padding: 5px 28px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: rgba(221, 218, 218, 0.1);
+  color: #fff;
 }
 
-.form-container-talap input[type=number] {
-    outline: none;
-    border: none;
-    border-radius: 6px;
-    color: #000;
-    font-size: 20px;
-    width: 40px;
-    text-align: center;
-    color: blue;
-    background-color: gray;
-
+.form-container-talap input[type="number"] {
+  text-align: center;
 }
 
 .sub-talap,
 .end-tatabae {
-    background-color: rgba(137, 43, 226, 0.685);
-    padding: 4px 15px;
-    border-radius: 8px;
-    outline: none;
-    border: none;
-    font-size: 20px;
-    margin: 30px;
-    color: #fff;
-    transition: all 0.5s;
+  background-color: rgba(137, 43, 226, 0.685);
+  padding: 4px 15px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin: 30px;
+  color: #fff;
+  transition: all 0.5s;
 }
 
 .end-tatabae {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .sub-talap:hover,
 .end-tatabae:hover {
-    background-color: red;
-    cursor: pointer;
+  background-color: red;
+  cursor: pointer;
 }
 
 /***** الجزء الخاص بصفحة تواصل معنا  *****/
 .cotact-container {
-    background-image: url(/image/contact.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 800px;
+  background-image: url(/image/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
 }
 
-
-
 #mosh {
-    text-align: right;
-    font-size: 15px;
-    border: #8289997a solid 1px;
+  text-align: right;
+  font-size: 15px;
+  border: #8289997a solid 1px;
 }
 
 .text-prb {
-    margin-bottom: 10px;
-    font-size: 15px;
+  margin-bottom: 10px;
+  font-size: 15px;
 }
 
 /* الجزء الخاص بصفحة تتبع طلبك */
 
-
-
 .num-of-talap {
-    background-color: #163d57;
-    border-radius: 10px;
-    width: 50%;
-    padding: 30px 0;
-    margin: 40px auto;
-    text-align: center;
-    height: 300px;
+  background-color: #163d57;
+  border-radius: 10px;
+  width: 50%;
+  padding: 30px 0;
+  margin: 40px auto;
+  text-align: center;
+  height: 300px;
 }
 
-.num-of-talap input[type=number] {
-    padding: 6px 0;
-    border: none;
-    outline: none;
-    border-radius: 8px;
+.num-of-talap input[type="number"] {
+  padding: 5px;
+  inline-size: 100px;
+  text-align: center;
 }
 
 /* الجزء الخاص بصفحة الطلبات  */
 .tatabea-container {
-    background-image: url(/image/tat.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-
+  background-image: url(/image/tat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container-main h2 {
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-    margin: 30px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin: 30px 0;
 }
 
 .active {
-    color: red;
+  color: red;
 }
 
 .tatabae-detailes {
-    background-color: #163d57;
-    padding: 15px;
-    border-radius: 10px;
-    width: 80%;
-    margin: 40px auto;
-    position: relative;
+  background-color: #163d57;
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 40px auto;
+  position: relative;
 }
 
 .cusat-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    direction: rtl;
-    width: 100%;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+  width: 100%;
+  text-align: center;
 }
 
 .eye-detailes {
-    background-color: #163d57;
-    color: #eee;
-    text-align: center;
-    border-radius: 0 0 8px 8px;
-    display: none;
+  background-color: #163d57;
+  color: #eee;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  display: none;
 }
 
 .cusat-item h4 {
-    font-size: 15px;
-    color: #fff;
+  font-size: 15px;
+  color: #fff;
 }
 
 .cusat-item p {
-    font-size: 15px;
-    margin: 20px 10px;
-    color: #ddd;
-
+  font-size: 15px;
+  margin: 20px 10px;
+  color: #ddd;
 }
 
 .fa-eye {
-    font-size: 22px;
-    color: white;
-    cursor: pointer;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
 }
 
 .eye-detailes h3 {
-    margin: 20px 0;
-    color: red;
+  margin: 20px 0;
+  color: red;
 }
 
 /******** الجزء الخاص بصفحة تسجيل افراد *********/
 .Personlogin-container {
-    background-image: url(/image/cccc.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: url(/image/cccc.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-
 
 /*Start form style*/
 form {
-    background-color: #103751;
-    height: auto;
-    max-width: 300px;
-    margin: 25px auto;
-    border-radius: 8px;
-    padding: 9px;
-
+  background-color: #103751;
+  height: auto;
+  max-width: 300px;
+  margin: 25px auto;
+  border-radius: 8px;
+  padding: 9px;
 }
 
 button {
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.58);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.58);
 }
 
 /*End form style*/
-
-
 
 /*****************************************/
 
 /*Start header*/
 form h1 {
-    text-align: center;
-    color: #fff;
-    padding-top: 30px;
+  text-align: center;
+  color: #fff;
+  padding-top: 30px;
 }
 
 form p {
-    color: #fff;
-    font-size: 11px;
-    text-align: center;
-    margin: 20px 0;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  margin: 20px 0;
 }
 
 /*The link of the site in the p tag ***/
-form p>a {
-    color: #828999;
-    text-decoration: none;
-    transition: 0.3s
+form p > a {
+  color: #828999;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-form p>a:hover {
-    color: #1da1f2
+form p > a:hover {
+  color: #1da1f2;
 }
 
-form p>a:active {
-    color: #1da1f2
+form p > a:active {
+  color: #1da1f2;
 }
 
 /*End login header*/
 
-
 /* Start the input-info style*/
 .input-info {
-    margin-top: 30px;
-    margin-bottom: 15px
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 /*the containe div style*/
@@ -885,21 +836,21 @@ input[type="email"],
 input[type="password"],
 input[type="tel"],
 #mosh {
-    padding: 10px;
-    border-radius: 5px;
-    width: 90%;
-    background: none;
-    color: #fff;
-    margin: 5px 10px;
-    outline: none;
-    transition: 0.3s;
-    text-indent: 25px;
-    overflow: hidden;
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%;
+  background: none;
+  color: #fff;
+  margin: 5px 10px;
+  outline: none;
+  transition: 0.3s;
+  text-indent: 25px;
+  overflow: hidden;
 }
 
 input[type="tel"] {
-    border: #8289997a solid 1px !important;
-    text-align: center;
+  border: #8289997a solid 1px !important;
+  text-align: center;
 }
 
 .fa-refresh,
@@ -907,212 +858,209 @@ input[type="tel"] {
 .fa-envelope,
 .fa-user-plus,
 .fa-user {
-    position: absolute;
-    margin-top: 14px;
-    margin-left: 24px;
-    color: #828999;
-    display: block;
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 24px;
+  color: #828999;
+  display: block;
 }
 
 .input-info input:hover {
-    background: #435688
+  background: #435688;
 }
 
 .input-info input[type="checkbox"] {
-    margin-left: 17px;
-    cursor: pointer;
-    margin-top: 7px
+  margin-left: 17px;
+  cursor: pointer;
+  margin-top: 7px;
 }
 
 .input-info span {
-    color: #f1f1f1;
-    font-size: 11px;
+  color: #f1f1f1;
+  font-size: 11px;
 }
 
-.input-info span>a {
-    color: #1da1f2
+.input-info span > a {
+  color: #1da1f2;
 }
 
-.input-info span>a:hover {
-    color: #fff
+.input-info span > a:hover {
+  color: #fff;
 }
 
 /*End the input-info style*/
 
 /*start the tow button login and sign up*/
 .log-sign {
-    text-align: center;
+  text-align: center;
 }
 
 /*the containe div style*/
 .signup,
 .login {
-    /*button login style*/
-    padding: 10px;
-    margin-top: 16px;
-    background: #435688;
-    color: #fff;
-    width: 103px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.5s;
-    border: 1px solid #435688;
-    outline: none;
+  /*button login style*/
+  padding: 10px;
+  margin-top: 16px;
+  background: #435688;
+  color: #fff;
+  width: 103px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid #435688;
+  outline: none;
 }
 
 .signup {
-    /*button signup style*/
-    background: #9e3434;
-    border: 1px solid #9e3434;
+  /*button signup style*/
+  background: #9e3434;
+  border: 1px solid #9e3434;
 }
 
-
-.log-sign .signup>a {
-    color: #fff;
-    text-decoration: none;
+.log-sign .signup > a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /*the signup link style*/
 .log-sign button:hover {
-    background: none;
-    border: 1px solid #828999;
-    color: #828999;
+  background: none;
+  border: 1px solid #828999;
+  color: #828999;
 }
 
 .send {
-    /*sugn up button at the signup.html page*/
-    padding: 10px;
-    margin-top: 16px;
-    background: #435688;
-    color: #fff;
-    width: 103px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.5s;
-    border: 1px solid #435688;
-    outline: none;
-    margin-left: 32%
+  /*sugn up button at the signup.html page*/
+  padding: 10px;
+  margin-top: 16px;
+  background: #435688;
+  color: #fff;
+  width: 103px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid #435688;
+  outline: none;
+  margin-left: 32%;
 }
-
 
 /*facebook social-media button style*/
 .social-media {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .social-media .btn1 {
-    /*facebook button*/
-    border: 0;
-    background: #3B5998;
-    color: #fff;
-    padding: 15px;
-    width: 90%;
-    margin-left: 16px;
-    margin-top: 14px;
-    border-radius: 5px;
-
+  /*facebook button*/
+  border: 0;
+  background: #3b5998;
+  color: #fff;
+  padding: 15px;
+  width: 90%;
+  margin-left: 16px;
+  margin-top: 14px;
+  border-radius: 5px;
 }
 
 .social-media .btn2 {
-    /*twitter button*/
-    border: 0;
-    padding: 15px;
-    margin-top: 11px;
-    width: 90%;
-    margin-left: 16px;
-    border-radius: 5px;
-    background: #1DA1F2;
-    color: #fff;
-
+  /*twitter button*/
+  border: 0;
+  padding: 15px;
+  margin-top: 11px;
+  width: 90%;
+  margin-left: 16px;
+  border-radius: 5px;
+  background: #1da1f2;
+  color: #fff;
 }
 
-.social-media button>a {
-    color: #fff;
-    text-decoration: none;
+.social-media button > a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /************/
 
 .forget-password {
-    text-align: center;
+  text-align: center;
 }
 
 .forget-password a {
-    color: #1da1f2;
-    transition: 0.3s;
-    text-decoration: underline;
+  color: #1da1f2;
+  transition: 0.3s;
+  text-decoration: underline;
 }
 
 .forget-password a:hover {
-    color: #fff
+  color: #fff;
 }
 
 .forget-password a:active {
-    color: #fff
+  color: #fff;
 }
 
 /*start form sign up*/
 
-
-
 /***** الجزء الخاص بصفحة  تسجيل شركات  *****/
 
 .form-container-company {
-    color: #fff;
-    text-align: center;
-    background-image: url(/image/business.webp);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  color: #fff;
+  text-align: center;
+  background-image: url(/image/business.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .comp-form {
-    background-color: #103751;
-    height: auto;
-    width: 400px;
-    margin: 50px auto;
-    border-radius: 8px;
+  background-color: #103751;
+  height: auto;
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 8px;
 }
 
 /* الجزء الخاص بصفحة مكتب الاستقدام */
-.container-estekdam{
-    background-image: url(/image/businessman.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.form-container-estekdam{
-    margin-top: 70px;
-    text-align: center;
-    color: #fff;
-}
-.form-container-estekdam form{
-    position: relative;
-}
-#est,#phon{
-    position: absolute;
-    top: 315px;
-    left: 30px;
-    color: #828999;
-}
-#phon{
-    top: 277px;
-}
-.form-container-estekdam input[type=tel]{
-    text-align: left;
+.container-estekdam {
+  background-image: url(/image/businessman.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.form-container-estekdam span{
+.form-container-estekdam {
+  margin-top: 70px;
+  text-align: center;
+  color: #fff;
+}
+
+.form-container-estekdam form {
+  position: relative;
+}
+
+#est,
+#phon {
+  position: absolute;
+  top: 315px;
+  left: 30px;
+  color: #828999;
+}
+
+#phon {
+  top: 277px;
+}
+
+.form-container-estekdam input[type="tel"] {
+  text-align: left;
+}
+
+.form-container-estekdam span {
   font-size: 14px;
 }
-.form-container-estekdam input[type=text]:hover,
-.form-container-estekdam input[type=tel]:hover{
-    background-color: #135178;
+
+.form-container-estekdam input[type="text"]:hover,
+.form-container-estekdam input[type="tel"]:hover {
+  background-color: #135178;
 }
-
-
-
-
 
 /* ===========
 media query
@@ -1120,101 +1068,103 @@ media query
 ============ */
 
 @media screen and (max-width: 1040px) {
-    .nav-bar {
-        font-size: 12px;
+  .nav-bar {
+    font-size: 12px;
+  }
 
-    }
-    .nav-bar a {
-        margin: 0 8px;
-        padding: 5px;
-    }
-    }
-
-@media screen and (max-width: 745px) {
-    .nav-bar a {
-        display: none;
-
-    }
-
-    .menu-bar-icon {
-        display: block;
-    }
-
-   
-    .footer-item {
-        display: grid;
-        justify-items: center;
-        justify-content: center;
-    }
-
-    .footer-logo {
-        width: fit-content;
-    }
-
-    .footer-logo p {
-        font-size: 13px;
-    }
-
-    .comtain-footer {
-        height: 500px;
-    }
-
-    .app-img img {
-        width: 50%;
-    }
-
-    .dewal-item {
-        width: 45%;
-    }
-
-    /* المهن المتاحة */
-    .cataigores {
-        justify-content: center;
-    }
-
-    .cat-sec {
-        width: 45%;
-    }
-
-    /* العملاء */
-    .customers {
-        display: block;
-    }
-
-    .customer-item {
-        margin: 30px auto;
-        width: 90%;
-    }
+  .nav-bar a {
+    margin: 0 8px;
+    padding: 5px;
+  }
 }
 
+@media screen and (max-width: 745px) {
+  .nav-bar a {
+    display: none;
+  }
 
+  .menu-bar-icon {
+    display: block;
+  }
 
+  .footer-item {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+  }
 
+  .footer-logo {
+    width: fit-content;
+  }
+
+  .footer-logo p {
+    font-size: 13px;
+  }
+
+  .comtain-footer {
+    height: 500px;
+  }
+
+  .app-img img {
+    width: 50%;
+  }
+
+  .dewal-item {
+    width: 45%;
+  }
+
+  /* المهن المتاحة */
+  .cataigores {
+    justify-content: center;
+  }
+
+  .cat-sec {
+    width: 45%;
+  }
+
+  /* العملاء */
+  .customers {
+    display: block;
+  }
+
+  .customer-item {
+    margin: 30px auto;
+    width: 90%;
+  }
+}
 
 /* small screen */
 
-
 @media screen and (max-width: 550px) {
-    .cat-sec {
-        width: 80%;
-    }
-    .app-img img {
-        width: 50%;
-    }
+  .cat-sec {
+    width: 80%;
+  }
 
-    .form-container-talap {
-        width: 80%;
-    }
+  .app-img img {
+    width: 50%;
+  }
 
-    .dewal-item {
-        width: 55%;
-    }
+  .form-container-talap {
+    width: 80%;
+  }
+
+  .dewal-item {
+    width: 55%;
+  }
+
+  /*** tatabae page ***/
+  .tatabae-detailes {
+    width: 50%;
+  }
+
+  .cusat-item {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 375px) {
-
-    .comp-form {
-        width: min-content;
-        padding: 0;
-    }
+  .comp-form {
+    width: min-content;
+    padding: 0;
+  }
 }
