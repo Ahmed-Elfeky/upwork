@@ -593,15 +593,11 @@ html {
 }
 
 /*** الجزء الخاص بشاشة طلب عمال*******/
-/* menu */
 .container-talap {
   background-image: url(/image/talapCover.png);
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-}
-
-.overLay {
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* form container */
@@ -637,11 +633,9 @@ input[type="number"] {
   color: #fff;
 }
 
-
 .form-container-talap input[type="number"] {
   text-align: center;
   inline-size: 90%;
-
 }
 
 .sub-talap,
@@ -672,7 +666,7 @@ input[type="number"] {
   background-image: url(/image/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 800px;
+  background-attachment: fixed;
 }
 
 #mosh {
@@ -788,10 +782,6 @@ form {
   padding: 9px;
 }
 
-/* button {
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.58);
-} */
-
 /*End form style*/
 
 /*****************************************/
@@ -853,6 +843,7 @@ input[type="tel"],
 
 input[type="tel"] {
   border: #8289997a solid 1px !important;
+  text-align: center;
 }
 
 .fa-refresh,
@@ -1027,22 +1018,22 @@ input[type="tel"] {
   color: #fff;
 }
 
-
-.estekdam-icon{
-    position: relative;
+.estekdam-icon {
+  position: relative;
 }
+
 #est {
-    top: 81px;
-    position: absolute;
-    left: 25px;
-    color: #828999;
+  top: 81px;
+  position: absolute;
+  left: 25px;
+  color: #828999;
 }
 
 #phon {
-    top: 43px;
-    position: absolute;
-    left: 25px;
-    color: #828999;
+  top: 43px;
+  position: absolute;
+  left: 25px;
+  color: #828999;
 }
 
 .form-container-estekdam input[type="tel"] {
@@ -1056,6 +1047,182 @@ input[type="tel"] {
 .form-container-estekdam input[type="text"]:hover,
 .form-container-estekdam input[type="tel"]:hover {
   background-color: #135178;
+}
+
+/******** الجزء الخاص بصفحةجميع العمالة  *********/
+
+.allWorkers-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* main search icon */
+
+.search-section {
+  position: relative;
+  border-radius: 35px;
+  width: 40%;
+  margin: 14px auto;
+  height: 50px;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 0 30px;
+  border: none;
+  outline: none;
+  display: block;
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0d3a5d;
+  color: #fff;
+  height: 100%;
+  width: 50px;
+  border-radius: 35px 0 0 35px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.button i {
+  font-size: 20px;
+}
+
+.header-search-select {
+  display: flex;
+  direction: rtl;
+  align-items: center;
+}
+
+.select-section label {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.select-section #workSelect,
+.select-section #jobsSelect {
+  font-size: 14px;
+  background-color: rgba(6, 43, 70, 0.98);
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 6px;
+}
+
+.worker-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 100px;
+}
+
+.worker-itemes {
+  width: 30%;
+  background-color: rgba(6, 43, 70, 0.98);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 0;
+  position: relative;
+}
+
+.worker-itemes img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.work-title {
+  text-align: center;
+}
+
+.woker-name span,
+.woker-job span,
+.woker-count span {
+  color: red;
+  font-size: 14px;
+}
+
+.btn-contain {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-contain button {
+  background-color: rgba(137, 43, 226, 0.685);
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 8px;
+  transition: all 0.8s;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.btn-contain button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+/* popup c.v detailes  when click button cv */
+#CloseCv {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 25px;
+  color: red;
+}
+
+#CloseCv:hover {
+  cursor: pointer;
+  font-size: 28px;
+  color: rgb(193, 23, 23);
+}
+
+.overLay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.8);
+  transition: all 0.8s;
+}
+
+.worker-itemes .detiles-cv img {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.detiles-cv,
+.pop-login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 10;
+}
+
+#CloseLogin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 23px;
+}
+
+#CloseLogin:hover {
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
 }
 
 /* ===========
@@ -1127,6 +1294,19 @@ media query
     margin: 30px auto;
     width: 90%;
   }
+
+  .header-search-select {
+    display: block;
+  }
+
+  /* pop up طلب عامل */
+  .search-section {
+    width: 100%;
+  }
+
+  .worker-itemes {
+    width: 45%;
+  }
 }
 
 /* small screen */
@@ -1155,5 +1335,28 @@ media query
 
   .cusat-item {
     display: block;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .worker-itemes {
+    width: 80%;
+    margin: auto;
+  }
+
+  .select-section {
+    display: grid;
+  }
+
+  .worker-itemes .detiles-cv img {
+    width: 300px;
+    height: 410px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .worker-itemes .detiles-cv img {
+    width: 200px;
+    height: 350px;
   }
 }

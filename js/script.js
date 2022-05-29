@@ -31,4 +31,28 @@ $(document).ready(function () {
   $(".fa-bars").click(function () {
     $("#mobile").slideToggle();
   });
+  // popup sectoin for all workers page ////
+  // to add popup cv image
+  $(".cv").click(function () {
+    // $(this).addClass('activeBtn')
+    $("#detailes-cv-popup").addClass("overLay");
+    $(this).parent().parent().find(".detiles-cv").css("display", "block");
+  });
+
+  // to remove popup cv image
+  $(".fa-circle-xmark").click(function () {
+    $("#detailes-cv-popup").removeClass("overLay");
+    $(".detiles-cv").css("display", "none");
+  });
+  // // to add popup to login when click button => طلب العامل
+  $(".talap").click(function () {
+    $("#detailes-cv-popup").addClass("overLay");
+    $(".pop-login").css("display", "block");
+  });
+  // // to close popup to login when click button => طلب العامل
+
+  $("#CloseLogin").click(function () {
+    $("#detailes-cv-popup").removeClass("overLay");
+    $(".pop-login").css("display", "none");
+  });
 });
