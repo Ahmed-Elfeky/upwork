@@ -1016,6 +1016,7 @@ input[type="tel"] {
   margin-top: 70px;
   text-align: center;
   color: #fff;
+  width: fit-content;
 }
 
 .estekdam-icon {
@@ -1061,7 +1062,7 @@ input[type="tel"] {
 .search-section {
   position: relative;
   border-radius: 35px;
-  width: 40%;
+  width: 38%;
   margin: 14px auto;
   height: 50px;
 }
@@ -1117,16 +1118,14 @@ input[type="tel"] {
 }
 
 .worker-sec {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  margin-top: 40px;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 100px;
 }
 
 .worker-itemes {
-  width: 30%;
   background-color: rgba(6, 43, 70, 0.98);
   color: #fff;
   text-align: center;
@@ -1159,10 +1158,10 @@ input[type="tel"] {
 .btn-contain button {
   background-color: rgba(137, 43, 226, 0.685);
   color: #fff;
-  padding: 2px 4px;
+  padding: 2px;
   border-radius: 8px;
   transition: all 0.8s;
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 13px;
 }
 
@@ -1304,8 +1303,8 @@ media query
     width: 100%;
   }
 
-  .worker-itemes {
-    width: 45%;
+  .worker-sec {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -1336,14 +1335,13 @@ media query
   .cusat-item {
     display: block;
   }
+  .worker-sec {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 448px) {
-  .worker-itemes {
-    width: 80%;
-    margin: auto;
-  }
-
+  
   .select-section {
     display: grid;
   }
@@ -1353,10 +1351,22 @@ media query
     height: 410px;
   }
 }
-
+@media screen and (max-width: 375px) {
+  .worker-sec {
+    grid-template-columns: 70%;
+    justify-content: center;
+  }
+ 
+  }
 @media screen and (max-width: 300px) {
   .worker-itemes .detiles-cv img {
     width: 200px;
     height: 350px;
+  }
+  .btn-contain button{
+    font-size: 10px;
+  }
+  .lang {
+    margin-right: 50px;
   }
 }
