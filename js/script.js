@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   $(".dewal").click(function () {
     $(".dropdown-menu-dewal").slideToggle(300);
   });

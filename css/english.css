@@ -1,0 +1,28 @@
+
+
+/****** All Worker page  *******/
+/* header section  */
+.header-search-select{
+    direction: ltr;
+}
+
+.search-section .input{
+    direction: ltr;
+    padding: 0 60px;
+}
+
+/* tatabea page جميع طلباتك */
+
+.cusat-item{
+    direction: ltr;
+}
+
+/* talap page  */
+.form-container-talap form {
+    direction: ltr;
+}
+
+/* company login page */
+.info-comp-form {
+    direction: ltr;
+}

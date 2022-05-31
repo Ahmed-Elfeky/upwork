@@ -15,7 +15,10 @@ body {
   width: 90%;
   margin: 0 auto;
 }
-
+.baarr{
+  background-color: red;
+  border: #2964d1 solid 5px;
+}
 /****** scrollbar start*****/
 html::-webkit-scrollbar {
   width: 0.8rem;
@@ -164,11 +167,11 @@ html {
 
 #mobile {
   position: absolute;
-  width: 129px;
+  width: 110px;
   top: 70px;
   bottom: 300px;
   right: 0;
-  height: 400px;
+  height: 450px;
   background-color: rgba(6, 43, 70, 0.98);
   z-index: 10;
   border-radius: 0 0 0 140px;
@@ -177,8 +180,9 @@ html {
 
 #mobile a {
   display: block;
-  margin: 20px auto;
-  width: 90%;
+  margin: 19px auto;
+  width: 91px;
+  text-align: right;
 }
 
 /* language icon => nav menu */
@@ -248,14 +252,14 @@ html {
 /* الدول المتاحه  */
 .dewal-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 15px;
 }
 
 .dewal-item {
-  width: 20%;
+  width: 120px;
   text-align: center;
   border-radius: 10px;
   background-color: #143f5c;
@@ -368,15 +372,17 @@ html {
 /************ customers start**************/
 .customers {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .customer-item {
-  width: 30%;
+  width: 28%;
   background-color: #163d57;
   border-radius: 8px;
   text-align: center;
-  padding: 15px;
+  padding: 15px 0;
   transition: all 0.6s;
 }
 
@@ -748,8 +754,8 @@ input[type="number"] {
 }
 
 .cusat-item p {
-  font-size: 15px;
-  margin: 20px 10px;
+  font-size: 11px;
+  margin: 10px 0;
   color: #ddd;
 }
 
@@ -1003,7 +1009,9 @@ input[type="tel"] {
   background-attachment: fixed;
   background-size: cover;
 }
-
+.info-comp-form {
+  direction: rtl;
+}
 /* الجزء الخاص بصفحة مكتب الاستقدام */
 .container-estekdam {
   background-image: url(/image/businessman.webp);
@@ -1013,10 +1021,9 @@ input[type="tel"] {
 }
 
 .form-container-estekdam {
-  margin-top: 70px;
   text-align: center;
   color: #fff;
-  width: fit-content;
+  direction: rtl;
 }
 
 .estekdam-icon {
@@ -1035,10 +1042,6 @@ input[type="tel"] {
   position: absolute;
   left: 25px;
   color: #828999;
-}
-
-.form-container-estekdam input[type="tel"] {
-  text-align: left;
 }
 
 .form-container-estekdam span {
@@ -1210,6 +1213,9 @@ input[type="tel"] {
   display: none;
   z-index: 10;
 }
+.pop-login {
+  width: max-content;
+}
 
 #CloseLogin {
   position: absolute;
@@ -1264,15 +1270,15 @@ media query
   }
 
   .comtain-footer {
-    height: 500px;
+    height: 510px;
   }
 
   .app-img img {
     width: 50%;
   }
 
-  .dewal-item {
-    width: 45%;
+  .customer-item{
+    width: 41%;
   }
 
   /* المهن المتاحة */
@@ -1285,15 +1291,7 @@ media query
   }
 
   /* العملاء */
-  .customers {
-    display: block;
-  }
-
-  .customer-item {
-    margin: 30px auto;
-    width: 90%;
-  }
-
+  
   .header-search-select {
     display: block;
   }
@@ -1323,9 +1321,6 @@ media query
     width: 80%;
   }
 
-  .dewal-item {
-    width: 55%;
-  }
 
   /*** tatabae page ***/
   .tatabae-detailes {
@@ -1338,6 +1333,9 @@ media query
   .worker-sec {
     grid-template-columns: 1fr 1fr;
   }
+  .customer-item{
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 448px) {
@@ -1349,6 +1347,9 @@ media query
   .worker-itemes .detiles-cv img {
     width: 300px;
     height: 410px;
+  }
+  .eye-detailes{
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 375px) {
