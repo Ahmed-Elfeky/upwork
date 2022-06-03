@@ -1013,14 +1013,13 @@ input[type="tel"] {
   direction: rtl;
 }
 /* الجزء الخاص بصفحة مكتب الاستقدام */
-.container-estekdam {
+.container-estekdam{
   background-image: url(/image/businessman.webp);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
-
-.form-container-estekdam {
+.container-estekdam {
   text-align: center;
   color: #fff;
   direction: rtl;
