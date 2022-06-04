@@ -14,11 +14,13 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style link -->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- <link rel="stylesheet" href="../css/english.css" /> -->
+
     <title>استقدام</title>
 </head>
 
-<body>
+<body dir="rtl" >
     <div class="container-estekdam">
 
     <!-- menu header start -->
@@ -61,26 +63,29 @@
     <!-- menu header end -->
 
     <!-- form section start -->
-        <form>
-            <label for="fname">اسم المكتب</label><br />
-            <input type="text" id="fname" name="fname" checked /><br />
-            <label for="Cname"> اسم صاحب المكتب </label><br />
-            <input type="text" id="Cname" name="Cname" checked /><br />
-            <label for="Sname">السجل التجاري</label><br />
-            <input type="text" id="Sname" name="Sname" checked /><br />
+        <form >
+            <label for="fname">اسم المكتب</label>
+            <input type="text" id="fname" name="fname"  />
+            <label for="Cname"> اسم صاحب المكتب </label>
+            <input type="text" id="Cname" name="Cname"  />
+            <label for="Sname">السجل التجاري</label>
+            <input type="text" id="Sname" name="Sname"  />
             <div class="estekdam-icon">
-                <label for="num"> رقم الهاتف</label><br />
+                <label for="num"> رقم الهاتف</label>
                 <input type="tel" id="num" name="tel" />
                 <i id="phon" class="fa-solid fa-phone-flip"></i>
                 <label for="whats"> </label>
-                <input type="tel" id="whats" name="tel" /> <br />
+                <input type="tel" id="whats" name="tel" />
                 <i id="est" class="fa-brands fa-whatsapp"></i>
             </div>
-            <label for="logo">لوجو الشركة</label><br />
-            <input id="logo" type="image" src="/image/logo-alt.webp" width="80px" alt="companyLogo" />
-            <br />
-            <input type="checkbox" />
-            <span> الموافقة علي الشروط والاحكام</span><br />
+
+            <label for="logo">لوجو الشركة</label>
+            <input type="file" onchange="preview()">
+            <img id="logo" src="" width="100px" height="100px" style="margin: 10px auto ;"/> <br>
+
+            
+            <input type="checkbox" /> 
+            <span> الموافقة علي الشروط والاحكام</span>
 
             <button class="sub-talap" type="submit">ارسال</button>
         </form>
@@ -125,6 +130,13 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    function preview() {
+        logo.src=URL.createObjectURL(event.target.files[0]);
+}
+</script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
 

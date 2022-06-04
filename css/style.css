@@ -827,6 +827,7 @@ form p > a:active {
 .input-info {
   margin-top: 30px;
   margin-bottom: 15px;
+  direction: ltr;
 }
 
 /*the containe div style*/
@@ -834,7 +835,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="tel"],
-#mosh {
+#mosh,#companySelect {
   padding: 10px;
   border-radius: 5px;
   width: 90%;
@@ -1012,6 +1013,19 @@ input[type="tel"] {
 .info-comp-form {
   direction: rtl;
 }
+#companySelect{
+  display: block;
+  margin: 10px auto;
+}
+.multiselect-dropdown-list-wrapper {color: #000;
+text-align: justify;
+}
+
+.multiselect-dropdown-list{
+  height:6rem !important;
+
+}
+
 /* الجزء الخاص بصفحة مكتب الاستقدام */
 .container-estekdam{
   background-image: url(/image/businessman.webp);

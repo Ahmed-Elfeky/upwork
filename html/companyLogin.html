@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl" >
 
 <head>
     <meta charset="UTF-8" />
@@ -15,13 +15,14 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="/css/style.css" />
-   
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- <link rel="stylesheet" href="../css/english.css" /> -->
+
 
     <title>تسجيل شركات</title>
 </head>
 
-<body >
+<body>
     <div class="form-container-company">
         <div class="companylogin-container">
             <!-- menu header start -->
@@ -68,12 +69,23 @@
             <div class="company-form">
                 <form class="comp-form">
                     <div class="info-comp-form">
-                        <label for="fname">اسم الشركة</label><br />
-                        <input type="text" id="fname" name="fname" checked /><br />
-                        <label for="fname">مجال الشركة</label><br />
-                        <input type="text" id="fname" name="fname" checked /><br />
-                        <label for="num"> العنوان </label><br />
-                        <input type="text" id="num" /><br />
+                        <label for="fname">اسم الشركة</label>
+                        <input type="text" id="fname" name="fname"  />
+
+                        <label for="companySelect">مجال الشركة</label>                        
+
+                        <select name="companySelect" id="companySelect" multiple >
+                            <option value="1"> تجاري</option>
+                            <option  value="2"> هندسي</option>
+                            <option  value="3"> طبي</option>
+                            <option value="4">معماري</option>
+                            <option value="5">خدمي</option>
+                            <option value="6">غذائي</option>
+                          </select>
+
+                        
+                        <label for="num"> العنوان </label>
+                        <input type="text" id="num" />
                         <h6 class="text-prb">نبذه مختصرة عن الشركة</h6>
                         <textarea id="mosh" cols="20" rows="2"> </textarea>
                     </div>
@@ -149,7 +161,7 @@
 
     <script src="/js/jquery.min.js"></script>
     <script src="/js/owl.carousel.min.js"></script>
-
+<script src="/js/multiselect-dropdown.js"></script>
     <script src="/js/script.js"></script>
 </body>
 

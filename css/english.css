@@ -23,6 +23,6 @@
 }
 
 /* company login page */
-.info-comp-form {
+.info-comp-form,.input-info  {
     direction: ltr;
 }
