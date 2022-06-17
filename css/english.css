@@ -1,5 +1,7 @@
 
-
+.owl-stage-outer{
+    direction: ltr;
+}
 /****** All Worker page  *******/
 /* header section  */
 .header-search-select{
