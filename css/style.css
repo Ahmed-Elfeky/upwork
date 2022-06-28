@@ -233,24 +233,7 @@ html {
   margin: 40px auto;
 }
 
-/* .btn-sub {
-  padding: 5px 15px;
-  margin-left: 40px;
-  border: none;
-  background-color: rgba(6, 43, 70, 0.98);
-  color: #fff;
-  outline: none;
-  font-size: 18px;
-  border-radius: 6px;
-  transition: all 0.7s;
-  display: block;
-  margin: 10px auto;
-}
 
-.btn-sub:hover {
-  cursor: pointer;
-  background-color: red;
-} */
 
 /* الدول المتاحه  */
 .dewal-container {
@@ -311,7 +294,6 @@ html {
   height: 2px;
   top: 33px;
   left: 50%;
-  right: 50%;
   transform: translate(-50%, -50%);
   background-color: #2964d1;
   transition: all 1s;
@@ -381,11 +363,12 @@ html {
 }
 
 .customer-item {
-  width: 28%;
+  max-width: 250px;
   background-color: #163d57;
   border-radius: 8px;
+  max-height: 350px;
   text-align: center;
-  padding: 15px 0;
+  padding: 15px;
   transition: all 0.6s;
 }
 
@@ -395,22 +378,25 @@ html {
 
 .customer-item .fa-theater-masks {
   color: #bf9149;
-  font-size: 33px;
+  font-size: 30px;
 }
 
 .customer-item p {
-  font-size: 15px;
+  font-size: 12px;
   color: #ddd;
   margin: 20px auto;
-  width: 80%;
-  text-align: left;
+  width: 100%;
+  text-align: justify;
+  max-height: 60px;
+  min-height: 60px;
+  overflow-y: auto;
 }
 
 .customer-item img {
   width: 100%;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .customer-item h3 {
@@ -513,7 +499,7 @@ html {
 #whatsapp {
   position: absolute;
     top: 0;
-    right: 2px;
+    right: 0;
     bottom: 170px;
     color: #fff;
     font-size: 20px;
